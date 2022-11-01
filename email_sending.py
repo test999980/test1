@@ -3,8 +3,8 @@ import os
 
 port = 465
 smtp_server = "smtp.gmail.com"
-USER_EMAIL = os.environ.get("emailsending127@gmail.com")
-USER_PASSWORD = os.environ.get("cwhaunpbfufqbeey")
+USER_EMAIL = os.environ.get("USER_EMAIL")
+USER_PASSWORD = os.environ.get("USER_PASSWORD")
 
 message = """\
     Subject: Welcome Ubaydah
