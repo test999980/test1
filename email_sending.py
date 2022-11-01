@@ -16,9 +16,9 @@ cset = 'utf-8'
 
 message = MIMEText(u'日本語のメールだよ★', 'plain', cset)
 message['Subject'] = Header(u'メール送信テスト', cset)
-msg['From'] = {USER_EMAIL}
-msg['To'] = {TO_MAIL}
-msg['Date'] = formatdate()
+message['From'] = {USER_EMAIL}
+message['To'] = {TO_MAIL}
+message['Date'] = formatdate()
 
 context = ssl.create_default_context()
 
