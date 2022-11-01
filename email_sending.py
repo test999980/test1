@@ -16,8 +16,6 @@ cset = 'utf-8'
 
 message = MIMEText(u'日本語のメールだよ★', 'plain', cset)
 message['Subject'] = Header(u'メール送信テスト', cset)
-message['From'] = 'from@example.com'
-message['To'] = 'to@example.com'
 
 context = ssl.create_default_context()
 
