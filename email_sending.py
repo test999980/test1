@@ -16,8 +16,8 @@ import smtplib
 from email.mime.text import MIMEText
 from email.utils import formatdate
 
-subject = '件名'
-bodyText = '本文'
+subject = MAIL_TITLE
+bodyText = MAIL_BODY
 
 # SMTPサーバに接続
 smtpobj = smtplib.SMTP('smtp.gmail.com', 587)
