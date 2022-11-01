@@ -9,7 +9,7 @@ USER_PASSWORD = os.environ.get("USER_PASSWORD")
 message = """\
     Subject: Welcome Ubaydah
 
-    課題内容です。
+    issue content
 """
 
 context = ssl.create_default_context()
