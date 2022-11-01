@@ -6,11 +6,7 @@ smtp_server = "smtp.gmail.com"
 USER_EMAIL = os.environ.get("USER_EMAIL")
 USER_PASSWORD = os.environ.get("USER_PASSWORD")
 
-message = """\
-    Subject: Welcome Ubaydah
-
-    This is your welcome email running 
-"""
+message = "Subject: Welcome Ubaydah"
 
 context = ssl.create_default_context()
 
