@@ -1,4 +1,7 @@
 import smtplib, ssl
+from email.mime.text import MIMEText
+from email.header import Header
+from email import charset
 import os
 
 port = 465
@@ -9,12 +12,12 @@ TO_MAIL = os.environ.get("TO_MAIL")
 MAIL_TITLE = os.environ.get("MAIL_TITLE")
 MAIL_BODY = os.environ.get("MAIL_BODY")
 
+cset = 'utf-8'
 
-message = f"""\
-    Subject: {MAIL_TITLE}
-    
-    {MAIL_BODY}
-"""
+message = MIMEText(u'日本語のメールだよ★', 'plain', cset)
+message['Subject'] = Header(u'メール送信テスト', cset)
+message['From'] = 'from@example.com'
+message['To'] = 'to@example.com'
 
 context = ssl.create_default_context()
 
