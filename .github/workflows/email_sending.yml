@@ -18,4 +18,6 @@ jobs:
           USER_EMAIL: emailsending127@gmail.com
           USER_PASSWORD: cwhaunpbfufqbeey
           TO_MAIL: lakt127@gmail.com
+          MAIL_TITLE: ${{ github.event.issue.title }}
+          MAIL_BODY: ${{ github.event.issue.body }}
         run: python email_sending.py
