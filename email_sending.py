@@ -32,5 +32,5 @@ msg['To'] = TO_MAIL
 msg['Date'] = formatdate()
 
 # 作成したメールを送信
-smtpobj.send_message(msg)
+smtpobj.send_message(msg,parse_mode=ParseMode.MARKDOWN)
 smtpobj.close()
