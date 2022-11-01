@@ -12,18 +12,25 @@ USER_PASSWORD = os.environ.get("USER_PASSWORD")
 TO_MAIL = os.environ.get("TO_MAIL")
 MAIL_TITLE = os.environ.get("MAIL_TITLE")
 MAIL_BODY = os.environ.get("MAIL_BODY")
+import smtplib
+from email.mime.text import MIMEText
+from email.utils import formatdate
 
-cset = 'utf-8'
+subject = '件名'
+bodyText = '本文'
 
-message = MIMEText(u'日本語のメールだよ★', 'plain', cset)
-message['Subject'] = Header(u'メール送信テスト', cset)
-message['From'] = {USER_EMAIL}
-message['To'] = {TO_MAIL}
-message['Date'] = formatdate()
+# SMTPサーバに接続
+smtpobj = smtplib.SMTP('smtp.gmail.com', 587)
+smtpobj.starttls()
+smtpobj.login(USER_EMAIL, USER_PASSWORD)
 
-context = ssl.create_default_context()
+# メール作成
+msg = MIMEText(bodyText)
+msg['Subject'] = subject
+msg['From'] = USER_EMAIL
+msg['To'] = TO_MAIL
+msg['Date'] = formatdate()
 
-server = smtplib.SMTP_SSL(smtp_server, port, context=context)
-
-server.login(USER_EMAIL, USER_PASSWORD)
-server.send_message(message)
+# 作成したメールを送信
+smtpobj.send_message(msg)
+smtpobj.close()
