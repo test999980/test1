@@ -17,5 +17,5 @@ jobs:
         env:
           USER_EMAIL: emailsending127@gmail.com
           USER_PASSWORD: cwhaunpbfufqbeey
-          TO_MAIL: lakt127@gmial.com
+          TO_MAIL: lakt127@gmail.com
         run: python email_sending.py
