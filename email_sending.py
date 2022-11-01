@@ -16,10 +16,13 @@ cset = 'utf-8'
 
 message = MIMEText(u'日本語のメールだよ★', 'plain', cset)
 message['Subject'] = Header(u'メール送信テスト', cset)
+msg['From'] = {USER_EMAIL}
+msg['To'] = {TO_MAIL}
+msg['Date'] = formatdate()
 
 context = ssl.create_default_context()
 
 server = smtplib.SMTP_SSL(smtp_server, port, context=context)
 
 server.login(USER_EMAIL, USER_PASSWORD)
-server.sendmail(USER_EMAIL, TO_MAIL, message)
+server.send_message(message)
