@@ -12,6 +12,7 @@ MAIL_BODY = os.environ.get("MAIL_BODY")
 
 message = f"""\
     Subject: {MAIL_TITLE}
+    
     {MAIL_BODY}
 """
 
