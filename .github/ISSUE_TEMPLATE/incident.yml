@@ -79,7 +79,7 @@ body:
 - type: input
   id: box_path
   attributes:
-    label: BOX格納先を記入
+    label: BOX格納先
     description: |
       ※添付ファイルがissueに収まらない場合使用
     placeholder: "※添付ファイルがissueに収まらない場合使用"
