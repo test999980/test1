@@ -1,0 +1,98 @@
+
+name: "Incident report 🐛"
+description: Report errors or unexpected behavior
+labels: [bug, question]
+assignees: mirzaprangon
+body:
+- type: markdown
+  attributes:
+    value: |
+      Fill out the form according to the guideline.
+      Title should be short, to the point and easy to understand.
+      
+- type: textarea
+  id: event_detail
+  attributes:
+    label: 事象
+    placeholder: "事象を記入"
+  validations:
+    required: false
+
+- type: textarea
+  id: investigation_detail
+  attributes:
+    label: 調査内容
+    placeholder: "調査内容を記入"
+  validations:
+    required: false
+
+- type: textarea
+  id: incident_cause
+  attributes:
+    label: 原因
+    placeholder: "インシデント発生原因を記入"
+  validations:
+    required: false
+
+- type: textarea
+  id: same_cause_incident
+  attributes:
+    label: 同件調査
+    placeholder: "同じ原因によって別の障害が発生するのか、同じ事象が起こるテナントは存在するのか、調査結果を記入"
+  validations:
+    required: false
+
+- type: textarea
+  id: temp_fix_proposal
+  attributes:
+    label: 暫定対策案
+    description: "暫定対策案を記入"
+    value: |
+      [対策内容]
+      
+      [影響範囲]
+            
+  validations:
+    required: false
+
+- type: textarea
+  id: final_fix_proposal
+  attributes:
+    label: 恒久対策案
+    description: "恒久対策案を記入"
+    value: |
+      [対策内容]
+      
+      [影響範囲]
+            
+  validations:
+    required: false
+
+- type: textarea
+  id: prevention_measure
+  attributes:
+    label: 再発防止策
+    placeholder: "再発防止を記入"
+  validations:
+    required: false
+    
+- type: input
+  id: box_path
+  attributes:
+    label: BOX格納先を記入
+    description: |
+      ※添付ファイルがissueに収まらない場合使用
+    placeholder: "※添付ファイルがissueに収まらない場合使用"
+  validations:
+    required: false
+
+- type: textarea
+  id: extra_comment
+  attributes:
+    label: 備考
+    placeholder: |
+      自由に記入可
+      進捗や補足など
+      ファイル添付も可能です。
+  validations:
+    required: false
