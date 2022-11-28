@@ -1,0 +1,35 @@
+
+name: "Request issue "
+description: -
+body:
+- type: markdown
+  attributes:
+    value: |
+      Fill out the form according to the guideline.
+      Title should be short, to the point and easy to understand.
+      
+- type: textarea
+  id: request_content
+  attributes:
+    label: 依頼内容
+    placeholder: "依頼内容を記入"
+  validations:
+    required: false
+
+- type: input
+  id: target_server
+  attributes:
+    label: 対象環境
+    placeholder: "対象環境を記入"
+  validations:
+    required: false
+
+- type: input
+  id: target_site
+  attributes:
+    label: 対象サイト
+    placeholder: "対象サイトを記入"
+  validations:
+    required: false
+
+
