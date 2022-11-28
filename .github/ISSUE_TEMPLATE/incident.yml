@@ -2,7 +2,6 @@
 name: "Incident report 🐛"
 description: Report errors or unexpected behavior
 labels: [bug, question]
-assignees: mirzaprangon
 body:
 - type: markdown
   attributes:
