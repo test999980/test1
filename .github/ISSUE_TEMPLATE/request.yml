@@ -3,10 +3,7 @@ name: "Request issue "
 description: this is create request issue
 body:
 - type: markdown
-  attributes:
-    value: |
-      Fill out the form according to the guideline.
-      Title should be short, to the point and easy to understand.
+  value: "# 依頼書"
       
 - type: textarea
   id: request_content
@@ -31,5 +28,35 @@ body:
     placeholder: "対象サイトを記入"
   validations:
     required: false
-
+    
+- type: markdown
+  attributes:
+    value: |
+      ### ファイル格納先
+      
+      [リンク](https://www.google.com/)
+      
+      ###承認
+      
+      | 担当 | 名前 | 日付 |
+      | :---: | :---: |  :---: | 
+      |   者 |||
+      |   者 |||
+      |   者 |||
+      
+      ---
+      
+      # 報告書
+      
+      ### 報告内容
+      
+      ### 作業実施日      
+      
+      ###承認
+      
+      | 担当 | 名前 | 日付 |
+      | :---: | :---: |  :---: | 
+      |   者 |||
+      |   者 |||
+      |   者 |||
 
