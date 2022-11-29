@@ -2,7 +2,7 @@
 name: "Request issue "
 description: this is create request issue
 body:
-- type: input
+- type: textarea
   attributes:
     value: "# 依頼書"
       
@@ -30,7 +30,7 @@ body:
   validations:
     required: false
     
-- type: input
+- type: textarea
   attributes:
     value: |
       ### ファイル格納先
