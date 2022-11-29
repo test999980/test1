@@ -3,7 +3,6 @@ name: "Request issue "
 description: this is create request issue
 body:
 - type: textarea
-  attributes:
     value: "# 依頼書"
       
 - type: textarea
@@ -31,7 +30,6 @@ body:
     required: false
     
 - type: textarea
-  attributes:
     value: |
       ### ファイル格納先
       
