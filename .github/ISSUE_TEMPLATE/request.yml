@@ -3,6 +3,8 @@ name: "Request issue "
 description: this is create request issue
 body:
 - type: textarea
+  attributes:
+    label: template_word1
     value: "# 依頼書"
       
 - type: textarea
@@ -30,7 +32,9 @@ body:
     required: false
     
 - type: textarea
-    value: |
+  attributes:
+    label: template_word1
+    value:  |
       ### ファイル格納先
       
       [リンク](https://www.google.com/)
