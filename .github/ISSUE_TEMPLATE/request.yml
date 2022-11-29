@@ -4,7 +4,7 @@ description: this is create request issue
 body:
 - type: textarea
   attributes:
-    label: template_word1
+    label: ※記入禁止※
     value: "# 依頼書"
       
 - type: textarea
@@ -33,7 +33,7 @@ body:
     
 - type: textarea
   attributes:
-    label: template_word2
+    label: ※記入禁止※
     value:  |
       ### ファイル格納先
       
