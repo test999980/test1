@@ -2,7 +2,7 @@
 name: "Request issue "
 description: this is create request issue
 body:
-- type: markdown
+- type: input
   attributes:
     value: "# 依頼書"
       
@@ -30,7 +30,7 @@ body:
   validations:
     required: false
     
-- type: markdown
+- type: input
   attributes:
     value: |
       ### ファイル格納先
