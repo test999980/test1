@@ -33,7 +33,7 @@ body:
     
 - type: textarea
   attributes:
-    label: ※記入禁止※
+    label: ※※記入禁止※※
     value:  |
       ### ファイル格納先
       
