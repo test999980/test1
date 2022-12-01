@@ -1,0 +1,27 @@
+
+name: "development requrement issue "
+description: this is create development requirement issue
+body:
+- type: textarea
+  id: requirement_content
+  attributes:
+    label: 要件内容
+    placeholder: "要件内容を記入"
+  validations:
+    required: false
+
+- type: textarea
+  id: basic_design
+  attributes:
+    label: 基本設計書変更箇所
+    placeholder: "入力不要"
+  validations:
+    required: false
+
+- type: textarea
+  id: detailed_design
+  attributes:
+    label: 詳細設計書変更箇所
+    placeholder: "入力不要"
+  validations:
+    required: false
