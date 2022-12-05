@@ -1,0 +1,10 @@
+name: "Request issue "
+description: this is create request issue
+body:
+- type: textarea
+  id: request_content
+  attributes:
+    label: 依頼内容
+    placeholder: "依頼内容を記入"
+  validations:
+    required: false
