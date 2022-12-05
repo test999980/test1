@@ -1,4 +1,4 @@
-name: "Request issue "
+name: "Request issue2 "
 description: this is create request issue
 body:
 - type: textarea
