@@ -2,7 +2,6 @@
 name: "Incident report 🐛"
 description: Report errors or unexpected behavior
 labels: [bug, question]
-project: test_project1
 body:
 - type: markdown
   attributes:
